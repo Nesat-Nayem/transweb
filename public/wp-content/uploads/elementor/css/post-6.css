@@ -1,0 +1,238 @@
+.elementor-kit-6 {
+    --e-global-color-primary: #1F232B;
+    --e-global-color-secondary: #54BE73;
+    --e-global-color-text: #818181;
+    --e-global-color-accent: #FFFFFF;
+    --e-global-color-c104462: #DFDFDF;
+    --e-global-color-91c2421: #F2F2F2;
+    --e-global-color-2c7cec9: #BEBEBE;
+    --e-global-color-f3fea59: #007EBD;
+    --e-global-color-8185f5c: #EEB269;
+    --e-global-color-85886cf: #DC5753;
+    --e-global-color-ad8ceda: #507CBE;
+    --e-global-color-9044616: #00ABEF;
+    --e-global-color-2a84dc3: #507CBE;
+    --e-global-color-8018f9e: #D93E2D;
+    --e-global-typography-primary-font-family: "Roboto";
+    --e-global-typography-primary-font-size: 16px;
+    --e-global-typography-primary-font-weight: 300;
+    --e-global-typography-primary-font-style: normal;
+    --e-global-typography-primary-line-height: 24px;
+    --e-global-typography-secondary-font-family: "Roboto";
+    --e-global-typography-secondary-font-size: 14px;
+    --e-global-typography-secondary-font-weight: 500;
+    --e-global-typography-secondary-font-style: normal;
+    --e-global-typography-secondary-line-height: 14px;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-size: 60px;
+    --e-global-typography-text-font-weight: 900;
+    --e-global-typography-text-font-style: normal;
+    --e-global-typography-text-line-height: 60px;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-size: 40px;
+    --e-global-typography-accent-font-weight: 900;
+    --e-global-typography-accent-font-style: normal;
+    --e-global-typography-accent-line-height: 40px;
+    --e-global-typography-425eebf-font-family: "Roboto";
+    --e-global-typography-425eebf-font-size: 30px;
+    --e-global-typography-425eebf-font-weight: 900;
+    --e-global-typography-425eebf-font-style: normal;
+    --e-global-typography-425eebf-line-height: 30px;
+    --e-global-typography-7af7794-font-family: "Roboto";
+    --e-global-typography-7af7794-font-size: 20px;
+    --e-global-typography-7af7794-font-weight: 900;
+    --e-global-typography-7af7794-font-style: normal;
+    --e-global-typography-7af7794-line-height: 20px;
+    --e-global-typography-0018b11-font-family: "Roboto";
+    --e-global-typography-0018b11-font-size: 16px;
+    --e-global-typography-0018b11-font-weight: 900;
+    --e-global-typography-0018b11-font-style: normal;
+    --e-global-typography-0018b11-line-height: 16px;
+    --e-global-typography-5e19665-font-family: "Roboto";
+    --e-global-typography-5e19665-font-size: 14px;
+    --e-global-typography-5e19665-font-weight: 900;
+    --e-global-typography-5e19665-font-style: normal;
+    --e-global-typography-5e19665-line-height: 14px;
+    --e-global-typography-1d36922-font-family: "Roboto";
+    --e-global-typography-1d36922-font-size: 14px;
+    --e-global-typography-1d36922-font-weight: 300;
+    --e-global-typography-1d36922-font-style: normal;
+    --e-global-typography-1d36922-line-height: 11px;
+    --e-global-typography-0de873e-font-family: "Roboto";
+    --e-global-typography-0de873e-font-size: 20px;
+    --e-global-typography-0de873e-font-weight: 300;
+    --e-global-typography-0de873e-text-transform: uppercase;
+    --e-global-typography-0de873e-font-style: normal;
+    --e-global-typography-0de873e-line-height: 25px;
+    --e-global-typography-43468f6-font-family: "Roboto";
+    --e-global-typography-43468f6-font-size: 20px;
+    --e-global-typography-43468f6-font-weight: 500;
+    --e-global-typography-43468f6-font-style: normal;
+    --e-global-typography-43468f6-line-height: 25px;
+    --e-global-typography-0b3560f-font-family: "Roboto";
+    --e-global-typography-0b3560f-font-size: 20px;
+    --e-global-typography-0b3560f-font-weight: 300;
+    --e-global-typography-0b3560f-font-style: italic;
+    --e-global-typography-0b3560f-line-height: 30px;
+    --e-global-typography-01d95fb-font-family: "Roboto";
+    --e-global-typography-01d95fb-font-size: 12px;
+    --e-global-typography-01d95fb-font-weight: 900;
+    --e-global-typography-01d95fb-text-transform: uppercase;
+    --e-global-typography-01d95fb-font-style: normal;
+    --e-global-typography-01d95fb-line-height: 14.4px;
+    --e-global-typography-8e1977c-font-family: "Roboto";
+    --e-global-typography-8e1977c-font-size: 20px;
+    --e-global-typography-8e1977c-font-weight: 300;
+    --e-global-typography-8e1977c-font-style: normal;
+    --e-global-typography-8e1977c-line-height: 24px;
+    --e-global-typography-cfbab2c-font-family: "Roboto";
+    --e-global-typography-cfbab2c-font-size: 12px;
+    --e-global-typography-cfbab2c-font-weight: 500;
+    --e-global-typography-cfbab2c-text-transform: uppercase;
+    --e-global-typography-cfbab2c-font-style: normal;
+    --e-global-typography-cfbab2c-line-height: 17.7px;
+    --e-global-typography-20edfea-font-family: "Roboto";
+    --e-global-typography-20edfea-font-size: 20px;
+    --e-global-typography-20edfea-font-weight: 400;
+    --e-global-typography-20edfea-font-style: normal;
+    --e-global-typography-20edfea-line-height: 20px;
+    --e-global-typography-7abb74f-font-family: "Roboto";
+    --e-global-typography-7abb74f-font-size: 12px;
+    --e-global-typography-7abb74f-font-weight: 400;
+    --e-global-typography-7abb74f-text-transform: uppercase;
+    --e-global-typography-7abb74f-line-height: 25px;
+    --e-global-typography-7abb74f-letter-spacing: 2.4px;
+    --e-global-typography-19f35be-font-family: "Roboto";
+    --e-global-typography-19f35be-font-size: 12px;
+    --e-global-typography-19f35be-font-weight: 500;
+    --e-global-typography-19f35be-text-transform: uppercase;
+    --e-global-typography-19f35be-font-style: normal;
+    --e-global-typography-19f35be-line-height: 14px;
+    --e-global-typography-cf4b96e-font-family: "Roboto";
+    --e-global-typography-cf4b96e-font-size: 12px;
+    --e-global-typography-cf4b96e-font-weight: 700;
+    --e-global-typography-cf4b96e-text-transform: uppercase;
+    --e-global-typography-cf4b96e-font-style: normal;
+    --e-global-typography-cf4b96e-line-height: 24px;
+    --e-global-typography-c57b3b7-font-family: "Roboto";
+    --e-global-typography-c57b3b7-font-size: 16px;
+    --e-global-typography-c57b3b7-font-weight: 700;
+    --e-global-typography-c57b3b7-font-style: normal;
+    --e-global-typography-c57b3b7-line-height: 24px;
+    --e-global-typography-507c8f8-font-family: "Roboto";
+    --e-global-typography-507c8f8-font-size: 12px;
+    --e-global-typography-507c8f8-font-weight: 900;
+    --e-global-typography-507c8f8-text-transform: uppercase;
+    --e-global-typography-507c8f8-font-style: normal;
+    --e-global-typography-507c8f8-line-height: 16px;
+    --e-global-typography-a1f716f-font-family: "Roboto";
+    --e-global-typography-a1f716f-font-size: 20px;
+    --e-global-typography-a1f716f-font-weight: 300;
+    --e-global-typography-a1f716f-font-style: italic;
+    --e-global-typography-a1f716f-line-height: 30px;
+    --e-global-typography-f8a4e4d-font-family: "Roboto";
+    --e-global-typography-f8a4e4d-font-size: 30px;
+    --e-global-typography-f8a4e4d-font-weight: 900;
+    --e-global-typography-8579b21-font-family: "Roboto";
+    --e-global-typography-8579b21-font-size: 12px;
+    --e-global-typography-8579b21-font-weight: 900;
+    --e-global-typography-8579b21-text-transform: uppercase;
+    --e-global-typography-8579b21-line-height: 14px;
+    --e-global-typography-1ba2a5c-font-family: "Roboto";
+    --e-global-typography-1ba2a5c-font-size: 20px;
+    --e-global-typography-1ba2a5c-font-weight: 500;
+    --e-global-typography-1ba2a5c-font-style: normal;
+    --e-global-typography-1ba2a5c-line-height: 20px;
+    --e-global-typography-4736f21-font-family: "Roboto";
+    --e-global-typography-4736f21-font-size: 12px;
+    --e-global-typography-4736f21-font-weight: 500;
+    --e-global-typography-4736f21-text-transform: uppercase;
+    --e-global-typography-4736f21-font-style: normal;
+    --e-global-typography-4736f21-line-height: 12px;
+    --e-global-typography-10743ab-font-family: "Roboto";
+    --e-global-typography-10743ab-font-size: 12px;
+    --e-global-typography-10743ab-font-weight: 700;
+    --e-global-typography-10743ab-text-transform: uppercase;
+    --e-global-typography-10743ab-font-style: normal;
+    --e-global-typography-10743ab-line-height: 24px;
+    --e-global-typography-d90e5b6-font-family: "Roboto";
+    --e-global-typography-d90e5b6-font-size: 20px;
+    --e-global-typography-d90e5b6-font-weight: 300;
+    --e-global-typography-d90e5b6-text-transform: uppercase;
+    --e-global-typography-d90e5b6-font-style: normal;
+    --e-global-typography-d90e5b6-line-height: 1em;
+    --e-global-typography-7c72861-font-family: "Roboto";
+    --e-global-typography-7c72861-font-size: 20px;
+    --e-global-typography-7c72861-font-weight: 300;
+    --e-global-typography-7c72861-font-style: normal;
+    --e-global-typography-7c72861-line-height: 30px;
+    --e-global-typography-0a934d9-font-family: "Roboto";
+    --e-global-typography-0a934d9-font-size: 60px;
+    --e-global-typography-0a934d9-font-weight: 900;
+    --e-global-typography-0a934d9-text-transform: uppercase;
+    --e-global-typography-0a934d9-font-style: normal;
+    --e-global-typography-0a934d9-line-height: 1em;
+    --e-global-typography-df357be-font-family: "Roboto";
+    --e-global-typography-df357be-font-size: 100px;
+    --e-global-typography-df357be-font-weight: 900;
+    --e-global-typography-df357be-font-style: normal;
+    --e-global-typography-df357be-line-height: 0.75em;
+    --e-global-typography-a734341-font-family: "Roboto";
+    --e-global-typography-a734341-font-size: 20px;
+    --e-global-typography-a734341-font-weight: 300;
+    --e-global-typography-a734341-font-style: normal;
+    --e-global-typography-a734341-line-height: 20px;
+    --e-global-typography-e1aae9e-font-family: "Roboto";
+    --e-global-typography-e1aae9e-font-size: 20px;
+    --e-global-typography-e1aae9e-font-weight: 300;
+    --e-global-typography-e1aae9e-font-style: normal;
+    --e-global-typography-e1aae9e-line-height: 30px;
+}
+
+.elementor-section.elementor-section-boxed>.elementor-container {
+    max-width: 1170px;
+}
+
+.e-container {
+    --container-max-width: 1170px;
+}
+
+.elementor-widget:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+.elementor-element {
+    --widgets-spacing: 0px;
+}
+
+{}
+
+h1.entry-title {
+    display: var(--page-title-display);
+}
+
+@media(max-width:1199px) {
+    .elementor-kit-6 {
+        --e-global-typography-0a934d9-font-size: 40px;
+        --e-global-typography-df357be-font-size: 80px;
+        --e-global-typography-df357be-line-height: 0.75em;
+    }
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 1024px;
+    }
+    .e-container {
+        --container-max-width: 1024px;
+    }
+}
+
+@media(max-width:767px) {
+    .elementor-kit-6 {
+        --e-global-typography-text-font-size: 44px;
+    }
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 767px;
+    }
+    .e-container {
+        --container-max-width: 767px;
+    }
+}
