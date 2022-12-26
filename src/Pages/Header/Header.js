@@ -255,7 +255,7 @@ const Header = () => {
                           to="singUp"
                           data-hover="Contact us"
                         >
-                          Franchises
+                          CP Register
                         </Link>
                       </li>
                     </ul>

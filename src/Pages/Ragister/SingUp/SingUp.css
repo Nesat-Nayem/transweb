@@ -18,6 +18,7 @@
 }
 .fromContainer{
   max-width: 700px;
+  margin: 50px 0px;
   width: 100%;
   background-color: #fff;
   padding: 25px 30px;

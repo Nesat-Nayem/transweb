@@ -14,7 +14,7 @@ const DownloadApps = () => {
             <div className="image-column col-lg-6 col-md-12 col-sm-12">
               <div className="inner-column">
                 <div className="image">
-                  <img src="https://i.ibb.co/Gc3PD03/Whats-App-Image-2022-12-20-at-12-39-02-PM.jpg" alt="" />
+                  <img src="https://i.ibb.co/P1PHxLB/Whats-App-Image-2022-12-22-at-11-08-01-AM.jpg" alt="" />
                 </div>
               </div>
             </div>

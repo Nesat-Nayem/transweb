@@ -34,7 +34,7 @@ const Home = () => {
             <Blog></Blog>
             <Testmonials></Testmonials>
             <DownloadApps></DownloadApps>
-            <Mission></Mission>
+            {/* <Mission></Mission> */}
             <FAQNewsLetter></FAQNewsLetter>
             </div>
             </div>

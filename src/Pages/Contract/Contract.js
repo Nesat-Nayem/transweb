@@ -114,7 +114,7 @@ const Contract = () => {
                                         <p>
                                           <span
                                             class="wpcf7-form-control-wrap"
-                                            data-name="your-name"
+                                            // data-name="your-name"
                                           >
                                             <input
                                               type="text"
@@ -132,7 +132,7 @@ const Contract = () => {
                                         <p>
                                           <span
                                             class="wpcf7-form-control-wrap"
-                                            data-name="your-phone"
+                                            // data-name="your-phone"
                                           >
                                             <input
                                               type="tel"
@@ -147,10 +147,28 @@ const Contract = () => {
                                           </span>
                                           <i class="fa fa-phone color2"></i>
                                         </p>
-                                        <p>
+                                        {/* <p>
                                           <span
                                             class="wpcf7-form-control-wrap"
                                             data-name="your-date"
+                                          >
+                                            <input
+                                              type="text"
+                                              name="your-date"
+                                              value=""
+                                              size="40"
+                                              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required walcf7-datepicker"
+                                              aria-required="true"
+                                              aria-invalid="false"
+                                              placeholder="Date"
+                                            />
+                                          </span>
+                                          <i class="fa fa-calendar color2"></i>
+                                        </p> */}
+                                        <p>
+                                          <span
+                                            class="wpcf7-form-control-wrap"
+                                            // data-name="your-date"
                                           >
                                             <input
                                               type="text"
@@ -168,7 +186,7 @@ const Contract = () => {
                                         <p>
                                           <span
                                             class="wpcf7-form-control-wrap"
-                                            data-name="your-time"
+                                            // data-name="your-time"
                                           >
                                             <input
                                               type="text"

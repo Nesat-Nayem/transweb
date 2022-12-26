@@ -62,7 +62,7 @@ const Banner = () => {
                 <ul class="slides">
                   <li class="slide-number-1   text-right l m">
                     <img
-                      src="https://i.ibb.co/8D7Qpxn/slide01.jpg"
+                      src="https://i.ibb.co/vdbkc7b/Whats-App-Image-2022-12-22-at-12-15-02-PM.jpg"
                       alt='&lt;span class="highlight"&gt;#1&lt;/span&gt; Moving CO.'
                     />
                     <div class="container slider-content intro_layers">
@@ -99,7 +99,7 @@ const Banner = () => {
                   </li>
                   <li class="slide-number-2    l m">
                     <img
-                      src="https://i.ibb.co/qpjS8xW/slide02.jpg"
+                      src="https://i.ibb.co/SV5Q1Mh/Whats-App-Image-2022-12-22-at-11-59-47-AM.jpg"
                       alt="Five Stars"
                     />
                     <div class="container slider-content intro_layers">
@@ -134,7 +134,7 @@ const Banner = () => {
                   </li>
                   <li class="slide-number-3   text-center i">
                     <img
-                      src="https://i.ibb.co/SrKtVjp/slide03.jpg"
+                      src="https://i.ibb.co/TtfPcr1/Whats-App-Image-2022-12-22-at-11-44-47-AM.jpg"
                       alt="Moving Services"
                     />
                     <div class="container slider-content intro_layers">

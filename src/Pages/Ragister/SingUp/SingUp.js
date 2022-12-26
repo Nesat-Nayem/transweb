@@ -1,45 +1,118 @@
 import React from "react";
 import './SingUp.css'
+
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useForm } from "react-hook-form";
 const SingUp = () => {
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const navigate = useNavigate();
+
+  const onSubmit = (data) => {
+ console.log(data)
+    axios
+    .post("http://localhost:7070/api/franciesSingUp", data)
+    .then((response) => {
+      // dispatch(signin(response.data));
+      
+      console.log(response.data);
+      // if (location.pathname === "/") {
+      navigate("");
+      // }
+
+      // const options = { position: "bottom-center" };
+      // cogoToast.success("Signup Sucessfully", options);
+    })
+    .catch((error) => {
+      // const options = { position: "bottom-center" };
+      // cogoToast.error("Authentication failed", options);
+      console.log(error.message);
+    });
+
+
+
+
+    // signupWithEmailAndPassword(
+    //   data.username,
+    //   data.email,
+    //   data.password,
+    //   photoURL,
+    //   userInfo
+    // );
+  };
+
+  // image upload handler
+  // const imageUploadHandler = (e) => {
+  //   const imageData = new FormData();
+  //   imageData.set("key", "fe834545cf9ccab761e32c03f567e890");
+  //   imageData.append("image", e.target.files[0]);
+  //   console.log(imageData);
+  //   axios
+  //     .post("https://api.imgbb.com/1/upload", imageData)
+  //     .then(function (response) {
+  //       setPhotoURL(response.data.data.display_url);
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // };
+
   return (
     <div id="singuppage">
     <div className="fullpage">
       <div class="fromContainer">
         <div class="title">Franchises Registration</div>
         <div class="content">
-          <form action="#">
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div class="user-details">
               <div class="input-box">
                 <span class="details">Full Name</span>
-                <input type="text" placeholder="Enter your name" required />
+                <input type="text" placeholder="Enter your name" 
+                 {...register("username", { required: true })}
+                />
               </div>
               <div class="input-box">
                 <span class="details">Email</span>
-                <input type="email" placeholder="Enter your email" required />
+                <input type="email" placeholder="Enter your email"
+                 {...register("email", { required: true })}
+                />
               </div>
               <div class="input-box">
                 <span class="details">Phone Number</span>
-                <input type="text" placeholder="Enter your number" required />
+                <input type="text" placeholder="Enter your number" 
+                 {...register("phone", { required: true })}
+                />
               </div>
               <div class="input-box">
                 <span class="details">Address</span>
-                <input type="text" placeholder="Enter your Address" required />
+                <input type="text" placeholder="Enter your Address" 
+                 {...register("address", { required: true })}
+                />
               </div>
               <div class="input-box">
                 <span class="details">State</span>
-                <input type="text" placeholder="Enter your State" required />
+                <input type="text" placeholder="Enter your State"
+                 {...register("state", { required: true })}
+                />
               </div>
               <div class="input-box">
                 <span class="details">City</span>
-                <input type="text" placeholder="Enter your City" required />
+                <input type="text" placeholder="Enter your City"
+                 {...register("city", { required: true })}
+                />
               </div>
-              <div class="input-box">
-                <span class="details">Pin Code</span>
-                <input type="text" placeholder="Enter your Pincode" required />
-              </div>
+    
               <div class="input-box">
                 <span class="details">NID</span>
-                <input type="file" id="fileupload" placeholder="Enter your email" required />
+                <input type="file" id="fileupload" placeholder="Enter your email"
+                 {...register("image", { required: true })}
+                />
 
                   
                 {/* </input> */}
@@ -48,16 +121,11 @@ const SingUp = () => {
           
               <div class="input-box">
                 <span class="details">Password</span>
-                <input type="text" placeholder="Enter your password" required />
-              </div>
-              <div class="input-box">
-                <span class="details">Confirm Password</span>
-                <input
-                  type="text"
-                  placeholder="Confirm your password"
-                  required
+                <input type="text" placeholder="Enter your password"
+                 {...register("password", { required: true })}
                 />
               </div>
+        
             </div>
             {/* <div class="gender-details">
               <input type="radio" name="gender" id="dot-1" />
