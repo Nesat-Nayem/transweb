@@ -17,13 +17,13 @@ const SingUp = () => {
   const onSubmit = (data) => {
  console.log(data)
     axios
-    .post("http://localhost:7070/api/franciesSingUp", data)
+    .post("https://good-pear-lemur-sari.cyclic.app/api/franciesSingUp", data)
     .then((response) => {
       // dispatch(signin(response.data));
       
       console.log(response.data);
       // if (location.pathname === "/") {
-      navigate("");
+      navigate("/package");
       // }
 
       // const options = { position: "bottom-center" };

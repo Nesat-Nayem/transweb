@@ -220,9 +220,9 @@ const Header = () => {
                       >
                         <a
                           href="#services"
-                          data-hover="Shop"
+                          data-hover="Contact us"
                         >
-                         Services
+                          Services
                         </a>
                       </li>
                       <li

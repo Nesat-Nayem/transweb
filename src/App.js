@@ -9,6 +9,9 @@ import {
 } from "react-router-dom";
 import Header from "./Pages/Header/Header";
 import Footer from "./Pages/Footer/Footer";
+import Packages from "./Pages/Packages/Packages";
+import Chackout from "./Pages/Chackout/Chackout";
+import TransPaymentForm from "./Pages/Chackout/TransPaymentForm";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
 {/* <Home></Home> */}
 <Route path="/" element={<Home />} />
         <Route path="singUp" element={<SingUp />} />
+        <Route path="package" element={<Packages />} />
+        <Route path="chackout" element={<Chackout />} />
+        <Route path="payment" element={<TransPaymentForm />} />
 
 </Routes>
 <Footer></Footer>
