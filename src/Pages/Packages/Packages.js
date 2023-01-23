@@ -1,84 +1,204 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import { Rating } from "react-simple-star-rating";
+
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
 import "./Package.css";
 
-const product = [
-    {
-        "id":767,
-        "name":"Movers & Packers",
-        "img":"https://moversco-demo.pbminfotech.com/demo2/wp-content/uploads/sites/2/2018/08/blog-01-800x533.jpg",
-        "category":"TOP SELL",
-        "price":8787,
-        "review":5
-    }
 
-]
 
-console.log(product.name)
 
-const Packages = () => {
+
+const Packages = (props) => {
+
+  console.log('test props',props)
+
+  
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/chackout");
+  }
+
+
+
+
     return (
-   <>
-      {
-
-        product.map((product)=>(
-
+      <>
+   <div className="mainclass" id="mainpackageid">
+ <div style={{marginTop:"50px", marginBottom:"30px", display:'flex', flexWrap:'wrap', justifyContent:'flex-start' , columnGap:"30px", }} class="wrapper">
 
 
-
-
-     <div
-        style={{ margin: "80px 0px" }}
-        className="col-lg-3 col-md-4 col-sm-6 col-xs-12 container "
-      >
-            <div className="card h-100">
-            <img id="cardImage" src={product.img} className="card-img-top" alt={product.name} />
-    
-            <NavLink
-              to={`/chackout`}
-              className="text-decoration-none"
-            >
-              <div className="card-body d-flex flex-column align-items-start">
-                <Rating ratingValue={product.review * 20} size={18} readonly={true} />
-                <p
-                  style={{
-                    color: "#3a9046",
-                    fontSize: "13px",
-                    margin: "5px 0",
-                  }}
-                >
-                  {String(product.category).toLocaleUpperCase()}
-                </p>
-                <h2
-                  className="card-title"
-                  style={{
-                    color: "#FF0080",
-                    fontSize: "18px",
-                    fontWeight: 900,
-                    margin: "10px 0",
-                    letterSpacing: "1px",
-                  }}
-                >
-                  {product.name}
-                </h2>
-                <p
-                  style={{
-                    color: "#3a9046",
-                    fontSize: "25px",
-                    marginBottom: "30px",
-                  }}
-                >
-                  ${product.price}
-                </p>
-              </div>
-            </NavLink>
+    <div class="table movers">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">$</span>
+            <span class="price">29</span>
           </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Own User Access</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Dashbord For Manage</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Report Analysis </span>
+          <span class="icon cross"><i class="fa fa-times"></i></span>
+        </li>
+        <li>
+          <span class="list-name">24/7 Support</span>
+          <span class="icon cross"><i class="fa fa-times"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button onClick={handleClick} style={{padding: "0px", fontSize: '17px'}}  >Purchase</button></div>
+    </div>
 
-</div>   
-        ))
-      }
-      </>                
+
+    <div class="table courier">
+      <div class="ribbon"><span>Recommend</span></div>
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">$</span>
+            <span class="price">59</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Own User Access</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Dashbord For Manage</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Report Analysis</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">24/7 Support</span>
+          <span class="icon cross"><i class="fa fa-times"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button onClick={handleClick} style={{padding: "12px", fontSize: '17px', background: 'linear-gradient(135deg, #71b7e6, #9b59b6)'}}>Purchase</button></div>
+    </div>
+
+
+    <div class="table storage">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">$</span>
+            <span class="price">99</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Own User Access</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Dashbord For Manage</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Report Analysis</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">24/7 Support</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button onClick={handleClick} style={{padding: "0px", fontSize: '17px'}} >Purchase</button></div>
+    </div>
+
+
+
+
+    <div class="table vehicle">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">$</span>
+            <span class="price">29</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Own User Access</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Dashbord For Manage</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Report Analysis </span>
+          <span class="icon cross"><i class="fa fa-times"></i></span>
+        </li>
+        <li>
+          <span class="list-name">24/7 Support</span>
+          <span class="icon cross"><i class="fa fa-times"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button onClick={handleClick}  style={{padding: "0px", fontSize: '17px'}}>Purchase</button></div>
+    </div>
+
+    <div class="table allp">
+      <div class="ribbon"><span>Recommend</span></div>
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">$</span>
+            <span class="price">59</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Own User Access</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Dashbord For Manage</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Report Analysis</span>
+          <span class="icon check"><i class="fa fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">24/7 Support</span>
+          <span class="icon cross"><i class="fa fa-times"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button onClick={handleClick} style={{padding: "12px", fontSize: '17px', background: 'linear-gradient(135deg, #71b7e6, #9b59b6)'}}>Purchase</button></div>
+    </div>
+
+
+
+
+
+  </div>
+      </div>  
+
+
+      </>              
     );
 };
 

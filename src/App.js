@@ -16,19 +16,21 @@ import TransPaymentForm from "./Pages/Chackout/TransPaymentForm";
 function App() {
   return (
     <BrowserRouter>
-       {/* <Header></Header> */}
+       <Header></Header>
     <Routes>
 
 {/* <Home></Home> */}
-<Route path="/" element={<Main />} />
+{/* <Route path="/" element={<Main />} /> */}
+<Route path="/" element={<Home />} />
         <Route path="singUp" element={<SingUp />} />
         <Route path="package" element={<Packages />} />
         <Route path="chackout" element={<Chackout />} />
         <Route path="payment" element={<TransPaymentForm />} />
 
 </Routes>
-{/* <Footer></Footer> */}
+<Footer></Footer>
     </BrowserRouter>
+ 
   );
 }
 

@@ -11,8 +11,9 @@ import {
   import axios from "axios";
   import { useNavigate, useParams } from "react-router-dom";
   import "./TransPaymentForm.css"
+  import Swal from 'sweetalert2'
 
-
+  
   const ELEMENT_OPTIONS = {
     style: {
       base: {
@@ -44,6 +45,47 @@ const TransPaymentForm = () => {
 
     // console.log(user)
     const navigate = useNavigate();
+
+
+    function handleClick() {
+
+ 
+
+      let timerInterval
+Swal.fire({
+  title: 'Success!',
+  html: `<p style="color: black; font-size: 15px" > Creation Done! Admin Approve You Soon </p>`,
+  timer: 3000,
+  width: '500px',
+  customClass: {
+    container: 'my-custom-class'
+  },
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+})
+
+setTimeout(() => {
+  // setShowText(true);
+
+  navigate("/");
+}, 1000);
+   
+    }
+  
   
 
   
@@ -214,9 +256,10 @@ const TransPaymentForm = () => {
                 </div>
         
             </div>
-    
-            <input type="submit" value="proceed to checkout" class="submit-btn" />
-    
+    <div style={{display:"flex", justifyContent:'space-around'}}>
+            <input onClick={handleClick} style={{border:"none"}} type="submit" value="Done" class="submit-btn" />
+            <input onClick={handleClick} style={{border:"none"}} type="submit" value="Skip" class="submit-btn" />
+            </div>
         </form>
     
     </div>  

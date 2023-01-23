@@ -79,7 +79,8 @@
 }
 
 .paymentcontainer form .submit-btn{
-  width: 100%;
+  width: 40%;
+
   padding:12px;
   font-size: 17px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
@@ -90,4 +91,23 @@
 
 .paymentcontainer form .submit-btn:hover{
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+
+
+.my-custom-class {
+  color: blue;
+  font-size: 20px;
+}
+.my-custom-class .swal2-title {
+  color: green;
+  font-size: 24px;
+}
+.my-custom-class .swal2-content {
+  color: green;
+  font-size: 18px;
+}
+.my-custom-class .swal2-confirm {
+  background-color: yellow;
+  font-size: 22px;
 }

@@ -7,7 +7,7 @@ const DownloadApps = () => {
         <div>
                  {/* start apps downlod section  */}
 
-      <section style={{ background: "#F3F4F6" , paddingBottom:"100px"}}>
+      <section style={{ background: "#f7f7f7" }}>
         <div className="container">
           <div className="row clearfix">
             {/* <!-- Image Column --> */}
@@ -21,21 +21,22 @@ const DownloadApps = () => {
 
             {/* <!-- Content Column --> */}
             <div className="content-column col-lg-6 col-md-12 col-sm-12">
-              <div className="inner-column">
+              <div style={{marginTop:'100px'}} className="inner-column">
                 <div className="sec-title">
                   <h2
                     className="my-4"
                     style={{
                       color: "#9CA3AF",
-                      fontSize: "1.5rem",
+                      fontSize: "2.5rem",
                       fontWeight: "bold",
+                      marginTop:"15px"
                     }}
                   >
                     Easy And Perfect Solution Trans23 App
                   </h2>
                 </div>
                 <div className="text">
-                  <p style={{ fontSize: "1.125rem" }}>
+                  <p style={{ fontSize: "1.7rem", fontFamily:"revert" }}>
                     Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
                     Nulla Placeat Deserunt Saepe Repudiandae Veniam Soluta
                     Minima Dolor Hic Aperiam Iure.
@@ -48,21 +49,21 @@ const DownloadApps = () => {
                   </p>
                 </div>
                 <div  className=" clearfix ">
-                  <div className="d-flex justify-content-left mt-4 ">
+                  <div style={{marginTop:"27px"}} className="d-flex justify-content-left mt-4 ">
                     {/* <div className='row'>
                       <div className='col-12'> */}
                       <button
                       type="button"
                       className=" py-3  text-white  ms-4"
                       style={{
-                        display: "flex",
+                        // display: "flex",
                         alignItems: "center",
                         height: "43px",
-                        background: "linear-gradient(90deg, #814096, #F83292)",
+                        background: "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
                         border: "none",
                         marginRight:"20px",
                         padding: "10px 41px",
-                        fontSize: "18px",
+                        fontSize: "14px",
                         borderRadius: "25px",
                       }}
                     >
@@ -75,14 +76,14 @@ const DownloadApps = () => {
                       type="button"
                       className="  py-3  text-white  mr-4"
                       style={{
-                        display: "flex",
+                        // display: "flex",
                         alignItems: "center",
                     
                         height: "43px",
-                        background: "linear-gradient(90deg, #814096, #F83292)",
+                        background: "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
                         border: "none",
                         padding: "10px 35px",
-                        fontSize: "18px",
+                        fontSize: "14px",
                         borderRadius: "25px",
                       }}
                     >

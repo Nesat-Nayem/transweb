@@ -4,6 +4,7 @@ import './SingUp.css'
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import Packages from "../../Packages/Packages";
 const SingUp = () => {
 
   const {
@@ -15,23 +16,26 @@ const SingUp = () => {
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
- console.log(data)
+    const alldata ={
+      username:data.username,
+      email:data.email,
+      password:data.password,
+      phone: data.phone,
+      address:data.address,
+      state:data.state,
+      city:data.city,
+      status:"InActive"
+    }
+//  console.log(alldata)
     axios
-    .post("https://good-pear-lemur-sari.cyclic.app/api/franciesSingUp", data)
+    .post("http://localhost:7070/api/franciesSingUp", alldata)
     .then((response) => {
-      // dispatch(signin(response.data));
       
-      console.log(response.data);
-      // if (location.pathname === "/") {
-      navigate("/package");
-      // }
-
-      // const options = { position: "bottom-center" };
-      // cogoToast.success("Signup Sucessfully", options);
+      // console.log(response.data);
+      <Packages data="good props" />
+      // navigate("/package");
     })
     .catch((error) => {
-      // const options = { position: "bottom-center" };
-      // cogoToast.error("Authentication failed", options);
       console.log(error.message);
     });
 
@@ -66,6 +70,8 @@ const SingUp = () => {
   return (
     <div id="singuppage">
     <div className="fullpage">
+
+   
       <div class="fromContainer">
         <div class="title">Franchises Registration</div>
         <div class="content">
@@ -148,7 +154,7 @@ const SingUp = () => {
               </div>
             </div> */}
             <div class="button">
-              <input type="submit" value="Register" />
+              <input style={{padding:"0px"}} type="submit" value="Register" />
             </div>
           </form>
         </div>
