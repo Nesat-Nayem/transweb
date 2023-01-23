@@ -4,8 +4,18 @@ import './SingUp.css'
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useForm } from "react-hook-form";
-import Packages from "../../Packages/Packages";
+import {addAccount} from "../../../slice/accountSlice"
+
+
+import { useSelector, useDispatch } from 'react-redux'
+
+
+
+
 const SingUp = () => {
+
+
+  const dispatch = useDispatch()
 
   const {
     register,
@@ -32,8 +42,9 @@ const SingUp = () => {
     .then((response) => {
       
       // console.log(response.data);
-      <Packages data="good props" />
-      // navigate("/package");
+      dispatch(addAccount(response.data))
+      // <Packages data="good props" />
+      navigate("/package");
     })
     .catch((error) => {
       console.log(error.message);

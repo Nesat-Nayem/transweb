@@ -1,17 +1,19 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
 import "./Package.css";
 
 
+import { useSelector } from 'react-redux'
 
 
 
-const Packages = (props) => {
+const Packages = () => {
 
-  console.log('test props',props)
-
+  // console.log('test props from redux',props.id.payload.data)
+  const count = useSelector((state) => state.account.account)
+  console.log('sets chack redux valu', count[0]?.payload?.data)
+// console.log('test props from redux',count.id.payload.data)
   
   const navigate = useNavigate();
 
