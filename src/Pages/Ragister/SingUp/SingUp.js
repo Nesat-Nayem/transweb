@@ -38,7 +38,7 @@ const SingUp = () => {
     }
 //  console.log(alldata)
     axios
-    .post("http://localhost:7070/api/franciesSingUp", alldata)
+    .post("https://good-pear-lemur-sari.cyclic.app/api/franciesSingUp", alldata)
     .then((response) => {
       
       // console.log(response.data);
