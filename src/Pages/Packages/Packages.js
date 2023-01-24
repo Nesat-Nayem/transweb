@@ -2,23 +2,49 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Package.css";
+import axios from "axios";
 
-
-import { useSelector } from 'react-redux'
-
+import { useSelector, useDispatch } from 'react-redux'
+// import {removeAccount} from "../../../slice/accountSlice"
+import {removeAccount} from "../../slice/accountSlice"
 
 
 const Packages = () => {
 
   // console.log('test props from redux',props.id.payload.data)
   const count = useSelector((state) => state.account.account)
-  console.log('sets chack redux valu', count[0]?.payload?.data)
+  const id = count[0]?.payload?.data
+
+  const dispatch = useDispatch()
+  // console.log('sets chack redux valu', count[0]?.payload?.data)
+  console.log('sets chack redux valu', id)
 // console.log('test props from redux',count.id.payload.data)
   
   const navigate = useNavigate();
 
-  function handleClick() {
-    navigate("/chackout");
+  function handleClick(str) {
+    // console.log(str)
+    // navigate("/chackout");
+
+    const service ={
+      service:str
+
+    }
+//  console.log(alldata)
+    axios
+    .patch(`http://localhost:7070/api/updateaccess/${id}`, service)
+    .then((response) => {
+      
+      // console.log(response.data);
+ 
+      // <Packages data="good props" />
+      dispatch(removeAccount())
+      navigate("/chackout");
+    })
+    .catch((error) => {
+      console.log(error.message);
+    });
+
   }
 
 
@@ -58,7 +84,7 @@ const Packages = () => {
           <span class="icon cross"><i class="fa fa-times"></i></span>
         </li>
       </ul>
-      <div class="btn"><button onClick={handleClick} style={{padding: "0px", fontSize: '17px'}}  >Purchase</button></div>
+      <div class="btn"><button onClick={() => handleClick("movers")} style={{padding: "0px", fontSize: '17px'}}  >Purchase</button></div>
     </div>
 
 
@@ -91,7 +117,7 @@ const Packages = () => {
           <span class="icon cross"><i class="fa fa-times"></i></span>
         </li>
       </ul>
-      <div class="btn"><button onClick={handleClick} style={{padding: "12px", fontSize: '17px', background: 'linear-gradient(135deg, #71b7e6, #9b59b6)'}}>Purchase</button></div>
+      <div class="btn"><button onClick={() => handleClick("courier")} style={{padding: "12px", fontSize: '17px', background: 'linear-gradient(135deg, #71b7e6, #9b59b6)'}}>Purchase</button></div>
     </div>
 
 
@@ -123,7 +149,7 @@ const Packages = () => {
           <span class="icon check"><i class="fa fa-check"></i></span>
         </li>
       </ul>
-      <div class="btn"><button onClick={handleClick} style={{padding: "0px", fontSize: '17px'}} >Purchase</button></div>
+      <div class="btn"><button onClick={() => handleClick("storage")} style={{padding: "0px", fontSize: '17px'}} >Purchase</button></div>
     </div>
 
 
@@ -157,7 +183,7 @@ const Packages = () => {
           <span class="icon cross"><i class="fa fa-times"></i></span>
         </li>
       </ul>
-      <div class="btn"><button onClick={handleClick}  style={{padding: "0px", fontSize: '17px'}}>Purchase</button></div>
+      <div class="btn"><button onClick={() => handleClick("vehicle")}  style={{padding: "0px", fontSize: '17px'}}>Purchase</button></div>
     </div>
 
     <div class="table allp">
@@ -189,7 +215,7 @@ const Packages = () => {
           <span class="icon cross"><i class="fa fa-times"></i></span>
         </li>
       </ul>
-      <div class="btn"><button onClick={handleClick} style={{padding: "12px", fontSize: '17px', background: 'linear-gradient(135deg, #71b7e6, #9b59b6)'}}>Purchase</button></div>
+      <div class="btn"><button onClick={() => handleClick("all")} style={{padding: "12px", fontSize: '17px', background: 'linear-gradient(135deg, #71b7e6, #9b59b6)'}}>Purchase</button></div>
     </div>
 
 
