@@ -12,6 +12,7 @@ import Footer from "./Pages/Footer/Footer";
 import Packages from "./Pages/Packages/Packages";
 import Chackout from "./Pages/Chackout/Chackout";
 import TransPaymentForm from "./Pages/Chackout/TransPaymentForm";
+import AboutUs from "./Pages/AboutUs/AboutUs";
 // import ParentPackage from "./Pages/Packages/ParentPackage";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 <Route path="/" element={<Home />} />
         <Route path="singUp" element={<SingUp />} />
         <Route path="package" element={<Packages />} />
+        <Route path="aboutus" element={<AboutUs />} />
         {/* <Route path="package" element={<ParentPackage />} /> */}
         <Route path="chackout" element={<Chackout />} />
         <Route path="payment" element={<TransPaymentForm />} />

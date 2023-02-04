@@ -32,7 +32,7 @@ const Packages = () => {
     }
 //  console.log(alldata)
     axios
-    .patch(`https://good-pear-lemur-sari.cyclic.app/api/updateaccess/${id}`, service)
+    .patch(`http://localhost:7070/api/updateaccess/${id}`, service)
     .then((response) => {
       
       // console.log(response.data);
