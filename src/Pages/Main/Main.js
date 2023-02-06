@@ -1,146 +1,146 @@
-import React from 'react';
+// import React from 'react';
 
-import { Link, NavLink } from "react-router-dom";
-const Main = () => {
-  return (
-    <div>
+// import { Link, NavLink } from "react-router-dom";
+// const Main = () => {
+//   return (
+//     <div>
       
-    <div class="preloader">
-      <div class="preloader_image"></div>
-    </div>
+//     <div class="preloader">
+//       <div class="preloader_image"></div>
+//     </div>
 
-    {/* <!-- search modal --> */}
-    {/* <div
-      class="modal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="search_modal"
-      id="search_modal"
-    >
-      <button
-        type="button"
-        class="close"
-        data-dismiss="modal"
-        aria-label="Close"
-      >
-        <span aria-hidden="true">
-          <i class="rt-icon2-cross2"></i>
-        </span>
-      </button>
-      <div class="widget widget_search">
-        <form
-          method="get"
-          class="searchform search-form form-inline"
-          action="./"
-        >
-          <div class="form-group">
-            <input
-              type="text"
-              value=""
-              name="search"
-              class="form-control"
-              placeholder="Search keyword"
-              id="modal-search-input"
-            />
-          </div>
-          <button type="submit" class="theme_button">Search</button>
-        </form>
-      </div>
-    </div> */}
-
-
-
-    {/* // <!-- wrappers for visual page editor and boxed version of template --> */}
+//     {/* <!-- search modal --> */}
+//     {/* <div
+//       class="modal"
+//       tabindex="-1"
+//       role="dialog"
+//       aria-labelledby="search_modal"
+//       id="search_modal"
+//     >
+//       <button
+//         type="button"
+//         class="close"
+//         data-dismiss="modal"
+//         aria-label="Close"
+//       >
+//         <span aria-hidden="true">
+//           <i class="rt-icon2-cross2"></i>
+//         </span>
+//       </button>
+//       <div class="widget widget_search">
+//         <form
+//           method="get"
+//           class="searchform search-form form-inline"
+//           action="./"
+//         >
+//           <div class="form-group">
+//             <input
+//               type="text"
+//               value=""
+//               name="search"
+//               class="form-control"
+//               placeholder="Search keyword"
+//               id="modal-search-input"
+//             />
+//           </div>
+//           <button type="submit" class="theme_button">Search</button>
+//         </form>
+//       </div>
+//     </div> */}
 
 
 
-
-    <div id="canvas">
-      <div id="box_wrapper">
-
-
-        {/* <!-- template sections --> */}
-
-          {/* doule header start  */}
+//     {/* // <!-- wrappers for visual page editor and boxed version of template --> */}
 
 
 
 
-
-{/* header finish */}
-
-
-
-{/* banner start  */}
+//     <div id="canvas">
+//       <div id="box_wrapper">
 
 
+//         {/* <!-- template sections --> */}
 
-
-{/* banner finish  */}
+//           {/* doule header start  */}
 
 
 
 
 
+// {/* header finish */}
 
-{/* service start */}
+
+
+// {/* banner start  */}
+
+
+
+
+// {/* banner finish  */}
+
+
+
+
+
+
+// {/* service start */}
 
     
 
-        {/* services finish  */}
+//         {/* services finish  */}
 
 
 
-        {/* about start  */}
+//         {/* about start  */}
 
 
-{/* about finish  */}
+// {/* about finish  */}
 
 
-{/* appointment start  */}
+// {/* appointment start  */}
 
       
 
-{/* appointment finish  */}
+// {/* appointment finish  */}
 
 
 
 
-{/* blog start  */}
+// {/* blog start  */}
 
 
      
 
-{/* blog finish  */}
+// {/* blog finish  */}
 
 
 
-{/* review start  */}
+// {/* review start  */}
 
 
-{/* review finish  */}
+// {/* review finish  */}
 
-{/* faq Newsletter start  */}
-
-
-
-        {/* faq Newsletter finish */}
-
-
-        {/* footer start  */}
+// {/* faq Newsletter start  */}
 
 
 
+//         {/* faq Newsletter finish */}
+
+
+//         {/* footer start  */}
 
 
 
-        {/* footer finish  */}
-      </div>
-      {/* <!-- eof #box_wrapper --> */}
-    </div>
-    {/* <!-- eof #canvas --> */}
-    </div>
-  );
-};
 
-export default Main;
+
+
+//         {/* footer finish  */}
+//       </div>
+//       {/* <!-- eof #box_wrapper --> */}
+//     </div>
+//     {/* <!-- eof #canvas --> */}
+//     </div>
+//   );
+// };
+
+// export default Main;

@@ -81,7 +81,7 @@ const Header = () => {
             <div class="row">
               <div class="col-sm-12 display_table">
                 <div class="header_left_logo display_table_cell">
-                  <a href="./" class="logo top_logo">
+                  <a href="/" class="logo top_logo">
                     <img src="https://i.ibb.co/Sd8xhC2/trans23jpg.jpg" alt="" />
                   </a>
                 </div>
@@ -91,7 +91,7 @@ const Header = () => {
                   <nav class="mainmenu_wrapper">
                     <ul class="mainmenu nav sf-menu">
                       <li class="active">
-                        <a href="">Home</a>
+                        <a href="/">Home</a>
                     
                       </li>
 

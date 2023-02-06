@@ -32,7 +32,7 @@ const Packages = () => {
     }
 //  console.log(alldata)
     axios
-    .patch(`http://localhost:7070/api/updateaccess/${id}`, service)
+    .patch(`https://happy-cummerbund-colt.cyclic.app/api/updateaccess/${id}`, service)
     .then((response) => {
       
       // console.log(response.data);
