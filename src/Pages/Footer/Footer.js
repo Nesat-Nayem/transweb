@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
+        <div     id="contract"   >
             <footer
           class="page_footer ds section_padding_top_150 section_padding_bottom_100 columns_padding_25"
         >

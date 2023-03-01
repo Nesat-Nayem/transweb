@@ -79,7 +79,7 @@ const SingUp = () => {
   // };
 
   return (
-    <div id="singuppage">
+    <div id="singUp">
     <div className="fullpage">
 
    

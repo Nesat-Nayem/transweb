@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { Link, NavLink } from "react-router-dom";
+// import { Link, NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 const Header = () => {
     return (
-        <div>
+        <div     id="home">
 {/*             
             <section class="page_topline with_search ls ms table_section">
           <div class="container">
@@ -71,18 +72,27 @@ const Header = () => {
                   <nav class="mainmenu_wrapper">
                     <ul class="mainmenu nav sf-menu">
                       <li class="active">
-                        <a href="/">Home</a>
+                        {/* <a href="landing#home">Home</a> */}
+                        <Link smooth to="/landing#home">
+                  Home
+                </Link>
                     
                       </li>
 
                       <li>
-                        <a href="#about">ABOUT</a>
+                        {/* <a href="#about">ABOUT</a> */}
+                        <Link smooth to="/landing#about">
+                        ABOUT
+                </Link>
                        
                       </li>
                       {/* <!-- eof pages --> */}
 
                       <li>
-                        <a href="#services">SERVICES</a>
+                        {/* <a href="#services">SERVICES</a> */}
+                        <Link smooth to="/landing#services">
+                        SERVICES
+                </Link>
                       
                         {/* <!-- eof mega menu --> */}
                       </li>
@@ -90,15 +100,21 @@ const Header = () => {
 
                       <!-- gallery --> */}
                       <li>
-                        <a href="#blog">BLOG
-                        </a>
+                        {/* <a href="#blog">BLOG
+                        </a> */}
+                             <Link smooth to="/landing#blog">
+                             BLOG
+                </Link>
                     
                       </li>
                       {/* <!-- eof Gallery -->
 
                       <!-- blog --> */}
                       <li>
-                        <a href="#contact">CONTACT US</a>
+                        {/* <a href="#contact">CONTACT US</a> */}
+                        <Link smooth to="/landing#contract">
+                        CONTACT US
+                </Link>
                    
                       </li>
                       {/* <!-- eof blog -->
