@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "homepage":"https://trans23.com/",
     "axios": "^1.2.1",
     "cogo-toast": "^4.2.3",
     "firebase": "^9.15.0",

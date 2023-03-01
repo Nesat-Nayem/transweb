@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <div>
-            
+{/*             
             <section class="page_topline with_search ls ms table_section">
           <div class="container">
             <div class="row">
@@ -47,34 +47,14 @@ const Header = () => {
                       class="searchform form-inline"
                       action="./"
                     >
-                      {/* <div class="form-group-wrap">
-                        <div class="form-group margin_0">
-                          <label class="sr-only" for="topline-search"
-                            >Search for:</label
-                          >
-                          <input
-                            id="topline-search"
-                            type="text"
-                            value=""
-                            name="search"
-                            class="form-control"
-                            placeholder="Search"
-                          />
-                        </div>
-                        <button
-                          type="submit"
-                          class="theme_button color1 no_bg_button"
-                        >
-                          Search
-                        </button>
-                      </div> */}
+    
                     </form>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <header style={{zIndex:"1000 !important"}} class="page_header header_white toggler_right">
           <div class="container">
@@ -128,7 +108,7 @@ const Header = () => {
                       <Link
                           to="singUp"
                         
-                        >CP REGISTER</Link>
+                        >FRANCHISES REGISTER</Link>
                        
                       </li>
                     </ul>

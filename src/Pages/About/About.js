@@ -1,6 +1,37 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import "./About.css";
 
 const About = () => {
+  const [scrolledUp, setScrolledUp] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      const imageEl = document.querySelector('.Cimimage');
+      const imageRect = imageEl.getBoundingClientRect();
+      const imageTop = imageRect.top + window.pageYOffset;
+    
+      if (window.pageYOffset > imageTop) {
+        setScrolledUp(true);
+      } else {
+        setScrolledUp(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+// In this example, the querySelector method is used to select the img element. The scroll event is added to the window object, which fires whenever the user scrolls the page.
+
+// The pageYOffset property of the window object is used to get the current scroll position of the page. If the scroll position is greater than 0, the move-up class is added to the img element to trigger the animation that moves the image up. Otherwise, the move-up class is removed to move the image back to its original position.
+
+
+
+
+
     return (
         <div>
         
@@ -47,7 +78,10 @@ const About = () => {
                 </p>
               </div>
               <div class="col-md-6 text-center bottommargin_0">
-                <img src="https://i.ibb.co/Z1kkZJs/change.png" alt="" class="top-overlap" />
+                <div className='cImagecontainer'>
+                <img src="https://i.ibb.co/Z1kkZJs/change.png" alt=""  className={`image ${scrolledUp ? 'move-up' : ''} top-overlap Cimimage`} />
+
+                </div>
               </div>
             </div>
           </div>

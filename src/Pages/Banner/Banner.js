@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div>
 
-<section
+{/* <section
           class="ds section_padding_top_15 section_padding_bottom_15 section_bottom_overlap table_section table_section_sm"
         >
           <div class="container">
@@ -46,11 +46,10 @@ const Banner = () => {
                 </div>
               </div>
               <div class="col-sm-4 text-sm-right">
-                {/* <a href="#" class="theme_button margin_0">Order moving</a> */}
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section class="intro_section page_mainslider ls ms">
           <div class="flexslider" data-nav="false">
