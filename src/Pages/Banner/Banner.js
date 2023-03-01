@@ -1,5 +1,7 @@
 import React from 'react';
-
+import "./Banner.css"
+import { BsApple } from "react-icons/bs";
+import { FaGooglePlay } from "react-icons/fa";
 const Banner = () => {
     return (
         <div>
@@ -57,7 +59,7 @@ const Banner = () => {
 
 
               <li class="ds">
-                <img src="https://i.ibb.co/TtfPcr1/Whats-App-Image-2022-12-22-at-11-44-47-AM.jpg" alt="" />
+                <img id='mainImage' src="https://i.ibb.co/TtfPcr1/Whats-App-Image-2022-12-22-at-11-44-47-AM.jpg" alt="" />
                 <div class="container">
                   <div class="row">
                     <div class="col-sm-12 text-center">
@@ -79,9 +81,54 @@ const Banner = () => {
                             </p>
                           </div>
                           <div class="intro-layer" data-animation="fadeInUp">
-                            <a href="about.html" class="theme_button color1"
+                            {/* <a href="about.html" class="theme_button color1"
                               >Get free quote</a
-                            >
+                            > */}
+                               <div style={{marginTop:"27px"}} className="d-flex justify-content-left mt-4 ">
+               
+               <button
+               id='appleapp'
+               type="button"
+               className=" py-3  text-white  ms-4"
+               style={{
+                 // display: "flex",
+                 alignItems: "center",
+                 height: "43px",
+                 background: "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
+                 border: "none",
+                 marginRight:"20px",
+                 padding: "10px 41px",
+                 fontSize: "14px",
+                 borderRadius: "25px",
+               }}
+             >
+               
+               <BsApple style={{marginRight:"10px"}} className="mr-2" /> app store
+             </button>
+          
+               <button
+               type="button"
+               className="  py-3  text-white  mr-4"
+               style={{
+                 // display: "flex",
+                 alignItems: "center",
+             
+                 height: "43px",
+                 background: "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
+                 border: "none",
+                 padding: "10px 35px",
+                 fontSize: "14px",
+                 borderRadius: "25px",
+               }}
+             >
+               
+               <FaGooglePlay style={{marginRight:"10px"}} className="mr-2" />
+               google-play
+             </button>
+     
+   
+          
+           </div>
                           </div>
                         </div>
                       </div>
@@ -91,7 +138,7 @@ const Banner = () => {
               </li>
 
               <li>
-                <img src="https://i.ibb.co/SV5Q1Mh/Whats-App-Image-2022-12-22-at-11-59-47-AM.jpg" alt="" />
+                <img id='mainImage' src="https://i.ibb.co/SV5Q1Mh/Whats-App-Image-2022-12-22-at-11-59-47-AM.jpg" alt="" />
                 <div class="container">
                   <div class="row">
                     <div class="col-sm-12">
@@ -114,9 +161,54 @@ const Banner = () => {
                             </p>
                           </div>
                           <div class="intro-layer" data-animation="fadeInUp">
-                            <a href="about.html" class="theme_button color1"
+                            {/* <a href="about.html" class="theme_button color1"
                               >Get free quote</a
-                            >
+                            > */}
+                               <div style={{marginTop:"27px"}} className="d-flex justify-content-left mt-4 ">
+               
+               <button
+               id='appleapp'
+               type="button"
+               className=" py-3  text-white  ms-4"
+               style={{
+                 // display: "flex",
+                 alignItems: "center",
+                 height: "43px",
+                 background: "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
+                 border: "none",
+                 marginRight:"20px",
+                 padding: "10px 41px",
+                 fontSize: "14px",
+                 borderRadius: "25px",
+               }}
+             >
+               
+               <BsApple style={{marginRight:"10px"}} className="mr-2" /> app store
+             </button>
+          
+               <button
+               type="button"
+               className="  py-3  text-white  mr-4"
+               style={{
+                 // display: "flex",
+                 alignItems: "center",
+             
+                 height: "43px",
+                 background: "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
+                 border: "none",
+                 padding: "10px 35px",
+                 fontSize: "14px",
+                 borderRadius: "25px",
+               }}
+             >
+               
+               <FaGooglePlay style={{marginRight:"10px"}} className="mr-2" />
+               google-play
+             </button>
+     
+   
+          
+           </div>
                           </div>
                         </div>
                         {/* <!-- eof .slide_description --> */}
@@ -130,8 +222,8 @@ const Banner = () => {
                 {/* <!-- eof .container --> */}
               </li>
 
-              <li>
-                <img src="https://i.ibb.co/vdbkc7b/Whats-App-Image-2022-12-22-at-12-15-02-PM.jpg" alt="" />
+              <li className='ds'>
+                <img id='mainImage' src="https://i.ibb.co/vdbkc7b/Whats-App-Image-2022-12-22-at-12-15-02-PM.jpg" alt="" />
                 <div class="container">
                   <div class="row">
                     <div class="col-sm-12 text-right">
@@ -153,9 +245,53 @@ const Banner = () => {
                             </p>
                           </div>
                           <div class="intro-layer" data-animation="fadeInUp">
-                            <a href="about.html" class="theme_button color1"
-                              >Get free quote</a
-                            >
+                        
+                             <div style={{marginTop:"27px"}} className="d-flex justify-content-left mt-4 ">
+               
+                      <button
+                      id='appleapp'
+                      type="button"
+                      className=" py-3  text-white  ms-4"
+                      style={{
+                        // display: "flex",
+                        alignItems: "center",
+                        height: "43px",
+                        background: "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
+                        border: "none",
+                        marginRight:"20px",
+                        padding: "10px 41px",
+                        fontSize: "14px",
+                        borderRadius: "25px",
+                      }}
+                    >
+                      
+                      <BsApple style={{marginRight:"10px"}} className="mr-2" /> app store
+                    </button>
+                 
+                      <button
+                      id='Gplay'
+                      type="button"
+                      className="  py-3  text-white  mr-4"
+                      style={{
+                        // display: "flex",
+                        alignItems: "center",
+                    
+                        height: "43px",
+                        background: "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
+                        border: "none",
+                        padding: "10px 35px",
+                        fontSize: "14px",
+                        borderRadius: "25px",
+                      }}
+                    >
+                      
+                      <FaGooglePlay style={{marginRight:"10px"}} className="mr-2" />
+                      google-play
+                    </button>
+            
+          
+                 
+                  </div>
                           </div>
                         </div>
                         {/* <!-- eof .slide_description --> */}

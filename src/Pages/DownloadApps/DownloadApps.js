@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./DownloadApps.css"
 import { BsApple } from "react-icons/bs";
 import { FaGooglePlay } from "react-icons/fa";
 const DownloadApps = () => {
@@ -54,6 +54,7 @@ const DownloadApps = () => {
                       <div className='col-12'> */}
                       <button
                       type="button"
+                      id='appleapp'
                       className=" py-3  text-white  ms-4"
                       style={{
                         // display: "flex",
@@ -74,6 +75,7 @@ const DownloadApps = () => {
                       <div  className='col-12'> */}
                       <button
                       type="button"
+                      id='Gplay'
                       className="  py-3  text-white  mr-4"
                       style={{
                         // display: "flex",
@@ -88,7 +90,7 @@ const DownloadApps = () => {
                       }}
                     >
                       
-                      <FaGooglePlay style={{marginRight:"10px"}} className="mr-2" />
+                      <FaGooglePlay style={{marginRight:"10px"}} className="mr-2 " />
                       google-play
                     </button>
                       {/* </div> */}

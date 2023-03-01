@@ -1,10 +1,10 @@
 .cImagecontainer {
     position: relative;
-    height: auto; /* Set a fixed height for the container */
+    height: auto; 
   }
   
   .Cimimage {
-    position: absolute;
+    position:relative;
     top: 0;
     left: 0;
     width: 100%;
