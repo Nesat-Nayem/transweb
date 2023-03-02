@@ -1,11 +1,11 @@
-import React from 'react';
-
+import React from "react";
+import "./header.css";
 // import { Link, NavLink } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink as NavLink } from "react-router-hash-link";
 const Header = () => {
-    return (
-        <div     id="home">
-{/*             
+  return (
+    <div id="home">
+      {/*             
             <section class="page_topline with_search ls ms table_section">
           <div class="container">
             <div class="row">
@@ -57,92 +57,85 @@ const Header = () => {
           </div>
         </section> */}
 
-        <header style={{zIndex:"1000 !important"}} class="page_header header_white toggler_right">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 display_table">
-                <div class="header_left_logo display_table_cell">
-                  <a href="/" class="logo top_logo">
-                    <img src="https://i.ibb.co/Sd8xhC2/trans23jpg.jpg" alt="" />
-                  </a>
-                </div>
+      <header
+        style={{ zIndex: "1000 !important" }}
+        class="page_header header_white toggler_right"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 display_table">
+              <div class="header_left_logo display_table_cell">
+                <a href="/" class="logo top_logo">
+                  <img src="https://i.ibb.co/Sd8xhC2/trans23jpg.jpg" alt="" />
+                </a>
+              </div>
 
-                <div class="header_mainmenu display_table_cell text-right">
-                  {/* <!-- main nav start --> */}
-                  <nav class="mainmenu_wrapper">
-                    <ul class="mainmenu nav sf-menu">
-                      <li class="active">
-                        {/* <a href="landing#home">Home</a> */}
-                        <Link smooth to="/landing#home">
-                  Home
-                </Link>
-                    
-                      </li>
+              <div class="header_mainmenu display_table_cell text-right">
+                {/* <!-- main nav start --> */}
+                <nav class="mainmenu_wrapper">
+                  <ul class="mainmenu nav sf-menu">
+                    <li>
+                      {/* <a href="landing#home">Home</a> */}
+                      <NavLink smooth to="/landing#home">
+                        Home
+                      </NavLink>
+                    </li>
 
-                      <li>
-                        {/* <a href="#about">ABOUT</a> */}
-                        <Link smooth to="/landing#about">
+                    <li>
+                      {/* <a href="#about">ABOUT</a> */}
+                      <NavLink smooth to="/landing#about">
                         ABOUT
-                </Link>
-                       
-                      </li>
-                      {/* <!-- eof pages --> */}
+                      </NavLink>
+                    </li>
+                    {/* <!-- eof pages --> */}
 
-                      <li>
-                        {/* <a href="#services">SERVICES</a> */}
-                        <Link smooth to="/landing#services">
+                    <li>
+                      {/* <a href="#services">SERVICES</a> */}
+                      <NavLink smooth to="/landing#services">
                         SERVICES
-                </Link>
-                      
-                        {/* <!-- eof mega menu --> */}
-                      </li>
-                      {/* <!-- eof features -->
+                      </NavLink>
+
+                      {/* <!-- eof mega menu --> */}
+                    </li>
+                    {/* <!-- eof features -->
 
                       <!-- gallery --> */}
-                      <li>
-                        {/* <a href="#blog">BLOG
+                    <li>
+                      {/* <a href="#blog">BLOG
                         </a> */}
-                             <Link smooth to="/landing#blog">
-                             BLOG
-                </Link>
-                    
-                      </li>
-                      {/* <!-- eof Gallery -->
+                      <NavLink smooth to="/landing#blog">
+                        BLOG
+                      </NavLink>
+                    </li>
+                    {/* <!-- eof Gallery -->
 
                       <!-- blog --> */}
-                      <li>
-                        {/* <a href="#contact">CONTACT US</a> */}
-                        <Link smooth to="/landing#contract">
+                    <li>
+                      {/* <a href="#contact">CONTACT US</a> */}
+                      <NavLink smooth to="/landing#contract">
                         CONTACT US
-                </Link>
-                   
-                      </li>
-                      {/* <!-- eof blog -->
+                      </NavLink>
+                    </li>
+                    {/* <!-- eof blog -->
 
                       <!-- contacts --> */}
-                      <li>
-                      <Link
-                          to="singUp"
-                        
-                        >FRANCHISES REGISTER</Link>
-                       
-                      </li>
-                    </ul>
-                  </nav>
-                  <span class="toggle_menu">
-                    <span></span>
-                  </span>
-                </div>
+                    <li>
+                      <NavLink to="singUp" className="frenches-btn">
+                        FRANCHISES REGISTER
+                      </NavLink>
+                    </li>
+                  </ul>
+                </nav>
+                <span class="toggle_menu">
+                  <span></span>
+                </span>
               </div>
             </div>
           </div>
-        </header>
-
-
-
-
         </div>
-    );
+      </header>
+    </div>
+  );
 };
 
 export default Header;
