@@ -1,0 +1,17 @@
+.cImagecontainer {
+    position: relative;
+    height: auto; 
+  }
+  
+  .Cimimage {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .Cimimage.move-up {
+    transform: translateX(10%);
+  }

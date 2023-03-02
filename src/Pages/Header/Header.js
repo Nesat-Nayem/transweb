@@ -1,0 +1,148 @@
+import React from 'react';
+
+// import { Link, NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+const Header = () => {
+    return (
+        <div     id="home">
+{/*             
+            <section class="page_topline with_search ls ms table_section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 text-center text-sm-left">
+                <p class="divided-content darklinks grey">
+                  <span>
+                    <strong>Welcome to Trans23:</strong> 15 Years Experience
+                  </span>
+                  <a href="contact.html">How to Find Us</a>
+                  <a href="#">Give Feedback</a>
+                </p>
+              </div>
+              <div class="col-sm-6 text-center text-sm-right">
+                <div class="inline-content">
+                  <p class="darklinks bottommargin_0">
+                    <a
+                    style={{  fontSize: '14px' ,fontWeight: 'bold' , marginRight: '15px'}}
+
+
+                      class="fa fa-facebook"
+                      href="#"
+                      title="Facebook"
+                    ></a>
+                    <a
+                    style={{   fontSize: '14px',fontWeight: 'bold', marginRight: '15px'}}
+                      class="fa fa-twitter"
+                      href="#"
+                      title="Twitter"
+                    ></a>
+                    <a
+                    style={{  fontSize: '14px'}}
+                      class="fa fa-pinterest"
+                      href="#"
+                      title="Instagram"
+                    ></a>
+                  </p>
+                  <div class="widget widget_search inline-block">
+                    <form
+                      method="get"
+                      class="searchform form-inline"
+                      action="./"
+                    >
+    
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> */}
+
+        <header style={{zIndex:"1000 !important"}} class="page_header header_white toggler_right">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 display_table">
+                <div class="header_left_logo display_table_cell">
+                  <a href="/" class="logo top_logo">
+                    <img src="https://i.ibb.co/Sd8xhC2/trans23jpg.jpg" alt="" />
+                  </a>
+                </div>
+
+                <div class="header_mainmenu display_table_cell text-right">
+                  {/* <!-- main nav start --> */}
+                  <nav class="mainmenu_wrapper">
+                    <ul class="mainmenu nav sf-menu">
+                      <li class="active">
+                        {/* <a href="landing#home">Home</a> */}
+                        <Link smooth to="/landing#home">
+                  Home
+                </Link>
+                    
+                      </li>
+
+                      <li>
+                        {/* <a href="#about">ABOUT</a> */}
+                        <Link smooth to="/landing#about">
+                        ABOUT
+                </Link>
+                       
+                      </li>
+                      {/* <!-- eof pages --> */}
+
+                      <li>
+                        {/* <a href="#services">SERVICES</a> */}
+                        <Link smooth to="/landing#services">
+                        SERVICES
+                </Link>
+                      
+                        {/* <!-- eof mega menu --> */}
+                      </li>
+                      {/* <!-- eof features -->
+
+                      <!-- gallery --> */}
+                      <li>
+                        {/* <a href="#blog">BLOG
+                        </a> */}
+                             <Link smooth to="/landing#blog">
+                             BLOG
+                </Link>
+                    
+                      </li>
+                      {/* <!-- eof Gallery -->
+
+                      <!-- blog --> */}
+                      <li>
+                        {/* <a href="#contact">CONTACT US</a> */}
+                        <Link smooth to="/landing#contract">
+                        CONTACT US
+                </Link>
+                   
+                      </li>
+                      {/* <!-- eof blog -->
+
+                      <!-- contacts --> */}
+                      <li>
+                      <Link
+                          to="singUp"
+                        
+                        >FRANCHISES REGISTER</Link>
+                       
+                      </li>
+                    </ul>
+                  </nav>
+                  <span class="toggle_menu">
+                    <span></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+
+
+
+        </div>
+    );
+};
+
+export default Header;

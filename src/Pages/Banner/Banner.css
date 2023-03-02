@@ -1,0 +1,19 @@
+
+@media (min-width: 768px) {
+    #mainImage {
+      height: 100vh;
+      min-height: 100%;
+    }
+  }
+
+
+  /* #appleapp{
+    display: none;
+  } */
+
+  @media (max-width: 767px) {
+    #appleapp {
+      display: none;
+    }
+  
+  }
