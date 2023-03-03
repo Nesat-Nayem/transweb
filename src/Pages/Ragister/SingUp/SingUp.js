@@ -38,7 +38,7 @@ const SingUp = () => {
     }
 //  console.log(alldata)
     axios
-    .post("https://happy-cummerbund-colt.cyclic.app/api/franciesSingUp", alldata)
+    .post("http://trans23server-env.eba-q3as37ty.ap-south-1.elasticbeanstalk.com/api/franciesSingUp", alldata)
     .then((response) => {
       
       // console.log(response.data);

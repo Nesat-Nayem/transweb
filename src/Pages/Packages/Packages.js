@@ -32,7 +32,7 @@ const Packages = () => {
     }
 //  console.log(alldata)
     axios
-    .patch(`https://happy-cummerbund-colt.cyclic.app/api/updateaccess/${id}`, service)
+    .patch(`http://trans23server-env.eba-q3as37ty.ap-south-1.elasticbeanstalk.com/api/updateaccess/${id}`, service)
     .then((response) => {
       
       // console.log(response.data);
