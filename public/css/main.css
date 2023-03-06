@@ -9523,10 +9523,11 @@ section .intro_section .slide_description_wrapper {
 
 @media (min-width: 1200px) {
   .intro_section h3 {
-    font-size: 40px;
+    font-size: 25px;
+    letter-spacing: 5px;
   }
   .intro_section h2 {
-    font-size: 80px;
+    font-size: 40px;
   }
 }
 
@@ -9702,8 +9703,7 @@ section .intro_section .slide_description_wrapper {
   .header_white .sf-menu > li > a {
     color: #1f232b;
   }
-  .header_white .sf-menu > li > a:hover,
-  .header_white .sf-menu > li.active > a {
+  .header_white .sf-menu > li > a:hover {
     color: #54be73;
   }
   .header_white .sf-menu > li + li:before {

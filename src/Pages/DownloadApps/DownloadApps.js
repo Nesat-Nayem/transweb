@@ -7,17 +7,20 @@ const DownloadApps = () => {
     <div>
       {/* start apps downlod section  */}
 
-      <section style={{ background: "#f7f7f7" }}>
+      <section style={{ background: "#075890" }}>
         <div className="container">
           <div className="row clearfix">
             {/* <!-- Content Column --> */}
             <div className="content-column col-lg-4 col-md-12 col-sm-12">
-              <div style={{ marginTop: "10px" }} className="inner-column">
+              <div
+                style={{ marginTop: "25px", marginBottom: "25px" }}
+                className="inner-column"
+              >
                 <div className="sec-title">
                   <h2
                     className="my-4"
                     style={{
-                      color: "#9CA3AF",
+                      color: "#fff",
                       fontSize: "2.5rem",
                       fontWeight: "bold",
                       marginTop: "15px",
@@ -27,7 +30,15 @@ const DownloadApps = () => {
                   </h2>
                 </div>
                 <div className="text">
-                  <p style={{ fontSize: "1.7rem", fontFamily: "revert" }}>
+                  <p
+                    style={{
+                      fontSize: "1.7rem",
+                      fontFamily: "revert",
+                      color: "#fff",
+                      fontSize: "12px",
+                      textAlign: "justify",
+                    }}
+                  >
                     Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
                     Nulla Placeat Deserunt Saepe Repudiandae Veniam Soluta
                     Minima Dolor Hic Aperiam Iure.
@@ -78,7 +89,7 @@ const DownloadApps = () => {
               <div className="inner-column" style={{ marginTop: "10px" }}>
                 <div className="image">
                   <img
-                    src="./images/Android Large - 26.jpg"
+                    src="./images/iphone.png"
                     alt=""
                     fluid
                     style={{ height: "400px" }}
@@ -89,12 +100,15 @@ const DownloadApps = () => {
 
             {/* <!-- Content Column --> */}
             <div className="content-column col-lg-4 col-md-12 col-sm-12">
-              <div style={{ marginTop: "10px" }} className="inner-column">
+              <div
+                style={{ marginTop: "25px", marginBottom: "25px" }}
+                className="inner-column"
+              >
                 <div className="sec-title">
                   <h2
                     className="my-4"
                     style={{
-                      color: "#9CA3AF",
+                      color: "#fff",
                       fontSize: "2.5rem",
                       fontWeight: "bold",
                       marginTop: "15px",
@@ -104,7 +118,15 @@ const DownloadApps = () => {
                   </h2>
                 </div>
                 <div className="text">
-                  <p style={{ fontSize: "1.7rem", fontFamily: "revert" }}>
+                  <p
+                    style={{
+                      fontSize: "1.7rem",
+                      fontFamily: "revert",
+                      color: "#fff",
+                      fontSize: "12px",
+                      textAlign: "justify",
+                    }}
+                  >
                     Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
                     Nulla Placeat Deserunt Saepe Repudiandae Veniam Soluta
                     Minima Dolor Hic Aperiam Iure.

@@ -12,6 +12,7 @@
     "axios": "^1.2.1",
     "cogo-toast": "^4.2.3",
     "firebase": "^9.15.0",
+    "gh-pages": "^5.0.0",
     "homepage": "",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",

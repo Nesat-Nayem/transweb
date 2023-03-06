@@ -1,4 +1,6 @@
 import React from "react";
+import { HashLink as NavLink } from "react-router-hash-link";
+import { BsChevronRight } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -136,72 +138,45 @@ const Footer = () => {
 
             <div class="col-md-4 col-sm-6">
               <div class="widget widget_recent_posts topmargin_10">
-                <h3 class="widget-title">Recent Posts</h3>
-
-                <ul class="media-list">
-                  <li class="media">
-                    <div class="media-left media-middle">
-                      <img src="images/recent_post1.jpg" alt="" />
-                    </div>
-                    <div class="media-body media-middle">
-                      <h4>
-                        <a href="blog-single-left.html">
-                          Tail cupim officia short loin frankfurter alcatra
-                        </a>
-                      </h4>
-                      <span class="fontsize_14">
-                        <time
-                          class="entry-date"
-                          datetime="2017-03-13T08:50:40+00:00"
-                        >
-                          March 12, 2017
-                        </time>
-                      </span>
-                    </div>
-                  </li>
-
-                  <li class="media">
-                    <div class="media-left media-middle">
-                      <img src="images/recent_post2.jpg" alt="" />
-                    </div>
-                    <div class="media-body media-middle">
-                      <h4>
-                        <a href="blog-single-left.html">
-                          Biltong venison beef swine. Corned beef pork ham
-                        </a>
-                      </h4>
-                      <span class="fontsize_14">
-                        <time
-                          class="entry-date"
-                          datetime="2017-03-13T08:50:40+00:00"
-                        >
-                          March 13, 2017
-                        </time>
-                      </span>
-                    </div>
-                  </li>
-
-                  <li class="media">
-                    <div class="media-left media-middle">
-                      <img src="images/recent_post3.jpg" alt="" />
-                    </div>
-                    <div class="media-body media-middle">
-                      <h4>
-                        <a href="blog-single-left.html">
-                          Prosciutto hamburger filet mignon
-                        </a>
-                      </h4>
-                      <span class="fontsize_14">
-                        <time
-                          class="entry-date"
-                          datetime="2017-03-13T08:50:40+00:00"
-                        >
-                          March 14, 2017
-                        </time>
-                      </span>
-                    </div>
-                  </li>
-                </ul>
+                <h3 class="widget-title">Quick Links</h3>
+                <div style={{ marginLeft: "10rem" }}>
+                  <ul class="media-list ">
+                    <li class="media">
+                      <BsChevronRight /> &nbsp;
+                      <NavLink smooth to="/landing#home" className="tab">
+                        Home
+                      </NavLink>
+                    </li>
+                    <li class="media">
+                      <BsChevronRight />
+                      &nbsp;
+                      <NavLink smooth to="/landing#about" className="tab">
+                        ABOUT
+                      </NavLink>
+                    </li>
+                    <li class="media">
+                      <BsChevronRight />
+                      &nbsp;
+                      <NavLink smooth to="/landing#services" className="tab">
+                        SERVICES
+                      </NavLink>
+                    </li>
+                    <li class="media">
+                      <BsChevronRight />
+                      &nbsp;
+                      <NavLink smooth to="/landing#contract" className="tab">
+                        CONTACT US
+                      </NavLink>
+                    </li>
+                    <li class="media">
+                      <BsChevronRight />
+                      &nbsp;
+                      <NavLink to="singUp" className="tab">
+                        FRANCHISES REGISTER
+                      </NavLink>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

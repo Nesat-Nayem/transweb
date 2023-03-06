@@ -7,10 +7,13 @@
   padding: 0.8rem !important;
 }
 
-nav ul li a:active {
-  /* background-color: #000 !important; */
+nav ul li a.active {
+  background-color: #000 !important;
 }
 
 .header_mainmenu .mainmenu_wrapper .mainmenu li a.tab:active {
   color: #085893 !important;
+}
+.active a {
+  background-color: red !important;
 }

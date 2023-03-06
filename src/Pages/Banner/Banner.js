@@ -10,34 +10,22 @@ const Banner = () => {
             <li className="">
               <img
                 id="mainImage"
-                src="https://i.pinimg.com/originals/6f/f5/c9/6ff5c92c2056efb4ecadd85e0c8c9482.jpg"
+                src="https://img.staticmb.com/mbcontent/images/uploads/2022/12/packers-and-movers-in-Patna.jpg"
                 alt=""
               />
               <div className="container">
                 <div className="row">
-                  <div className="col-sm-12 text-center">
+                  <div className="col-sm-12 text-right">
                     <div className="slide_description_wrapper">
-                      <div className="slide_description">
+                      <div className="slide_description text-left">
                         <div className="intro-layer" data-animation="fadeInUp">
-                          <h3 className="highlight">
-                            Commercial &amp; Residential
-                          </h3>
-                          <h2
-                            style={{
-                              color: "#000",
-                              fontSize: "50px",
-                              padding: "10px",
-                            }}
-                          >
-                            Moving Services
+                          <h3 style={{ color: "#000" }}>Find out why we're</h3>
+                          <h2 style={{ color: "#000" }}>
+                            <span className="highlight">#1</span> Moving
                           </h2>
                         </div>
-                        <div
-                          className="intro-layer"
-                          data-animation="fadeInUp"
-                          style={{ color: "#000" }}
-                        >
-                          <p className="">
+                        <div className="intro-layer" data-animation="fadeInUp">
+                          <p className="grey" style={{ color: "#000" }}>
                             <span className="bold">Trans23 Company</span> is a
                             local moving company with experts and professionals,
                             who cater to customer needs with safety, care and
@@ -46,10 +34,15 @@ const Banner = () => {
                           </p>
                         </div>
                       </div>
+                      {/* <!-- eof .slide_description --> */}
                     </div>
+                    {/* <!-- eof .slide_description_wrapper --> */}
                   </div>
+                  {/* <!-- eof .col-* --> */}
                 </div>
+                {/* <!-- eof .row --> */}
               </div>
+              {/* <!-- eof .container --> */}
             </li>
 
             <li>
@@ -84,44 +77,6 @@ const Banner = () => {
                   </div>
                 </div>
               </div>
-            </li>
-
-            <li className="">
-              <img
-                id="mainImage"
-                src="https://img.staticmb.com/mbcontent/images/uploads/2022/12/packers-and-movers-in-Patna.jpg"
-                alt=""
-              />
-              <div className="container">
-                <div className="row">
-                  <div className="col-sm-12 text-right">
-                    <div className="slide_description_wrapper">
-                      <div className="slide_description text-left">
-                        <div className="intro-layer" data-animation="fadeInUp">
-                          <h3 style={{ color: "#000" }}>Find out why we're</h3>
-                          <h2 style={{ color: "#000" }}>
-                            <span className="highlight">#1</span> Moving
-                          </h2>
-                        </div>
-                        <div className="intro-layer" data-animation="fadeInUp">
-                          <p className="grey" style={{ color: "#000" }}>
-                            <span className="bold">Trans23 Company</span> is a
-                            local moving company with experts and professionals,
-                            who cater to customer needs with safety, care and
-                            love. Call us now:
-                            <span className="bold">01 123 456 789</span>
-                          </p>
-                        </div>
-                      </div>
-                      {/* <!-- eof .slide_description --> */}
-                    </div>
-                    {/* <!-- eof .slide_description_wrapper --> */}
-                  </div>
-                  {/* <!-- eof .col-* --> */}
-                </div>
-                {/* <!-- eof .row --> */}
-              </div>
-              {/* <!-- eof .container --> */}
             </li>
           </ul>
         </div>
