@@ -1,14 +1,12 @@
-@media (min-width: 768px) {
-  #mainImage {
-    height: 70vh;
-    min-height: 100%;
-  }
-}
-
 /* #appleapp{
     display: none;
   } */
 
+.banner-bottom-section {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
 @media (max-width: 767px) {
   #appleapp {
     margin-bottom: 2rem;

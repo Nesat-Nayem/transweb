@@ -1,10 +1,16 @@
 .frenches-btn {
-  background-color: #ffc107;
+  background-color: #54be73;
+  color: #000 !important;
   margin-top: 2rem;
-  border-radius: 10px;
-  height: 5rem;
-  padding: 1.1rem !important;
-  -webkit-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+  height: 4rem;
+  padding: 0.8rem !important;
+}
+
+nav ul li a:active {
+  /* background-color: #000 !important; */
+}
+
+.header_mainmenu .mainmenu_wrapper .mainmenu li a.tab:active {
+  color: #085893 !important;
 }

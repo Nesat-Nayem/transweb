@@ -46,7 +46,12 @@ const About = () => {
                   <h4 class="thin bottommargin_0 text-uppercase p2">
                     Welcome to the
                   </h4>
-                  <h2 class="section_header big typewriter">Best Movers</h2>
+                  <h2
+                    class="section_header big cImagecontainer"
+                    style={{ fontSize: "50px" }}
+                  >
+                    Best Movers
+                  </h2>
                 </div>
               </div>
               <p class="fontsize_20 grey">

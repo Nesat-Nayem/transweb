@@ -1,18 +1,16 @@
 import React from "react";
 import "./Banner.css";
-import { BsApple } from "react-icons/bs";
-import { FaGooglePlay } from "react-icons/fa";
-import { AiOutlineLogin } from "react-icons/ai";
+
 const Banner = () => {
   return (
     <>
-      <section className="intro_section page_mainslider ls ms">
+      <section className="intro_section page_mainslider ">
         <div className="flexslider" data-nav="false">
           <ul className="slides">
-            <li className="ds">
+            <li className="">
               <img
                 id="mainImage"
-                src="https://i.ibb.co/TtfPcr1/Whats-App-Image-2022-12-22-at-11-44-47-AM.jpg"
+                src="https://i.pinimg.com/originals/6f/f5/c9/6ff5c92c2056efb4ecadd85e0c8c9482.jpg"
                 alt=""
               />
               <div className="container">
@@ -24,89 +22,28 @@ const Banner = () => {
                           <h3 className="highlight">
                             Commercial &amp; Residential
                           </h3>
-                          <h2>Moving Services</h2>
+                          <h2
+                            style={{
+                              color: "#000",
+                              fontSize: "50px",
+                              padding: "10px",
+                            }}
+                          >
+                            Moving Services
+                          </h2>
                         </div>
-                        <div className="intro-layer" data-animation="fadeInUp">
-                          <p className="grey">
+                        <div
+                          className="intro-layer"
+                          data-animation="fadeInUp"
+                          style={{ color: "#000" }}
+                        >
+                          <p className="">
                             <span className="bold">Trans23 Company</span> is a
                             local moving company with experts and professionals,
                             who cater to customer needs with safety, care and
                             love. Call us now:
                             <span className="bold">01 123 456 789</span>
                           </p>
-                        </div>
-                        <div className="intro-layer" data-animation="fadeInUp">
-                          <div
-                            style={{ marginTop: "27px" }}
-                            className="d-flex justify-content-left mt-4 "
-                          >
-                            <button
-                              id="appleapp"
-                              type="button"
-                              className=" py-3  text-white  ms-4"
-                              style={{
-                                alignItems: "center",
-                                height: "43px",
-                                background:
-                                  "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
-                                border: "none",
-                                marginRight: "20px",
-                                padding: "10px 41px",
-                                fontSize: "14px",
-                                borderRadius: "25px",
-                              }}
-                            >
-                              <BsApple
-                                style={{ marginRight: "10px" }}
-                                className="mr-2"
-                              />{" "}
-                              app store
-                            </button>
-
-                            <button
-                              id="Gplay"
-                              type="button"
-                              className="  py-3  text-white  mr-4"
-                              style={{
-                                alignItems: "center",
-
-                                height: "43px",
-                                background:
-                                  "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
-                                border: "none",
-                                padding: "10px 35px",
-                                fontSize: "14px",
-                                borderRadius: "25px",
-                              }}
-                            >
-                              <FaGooglePlay
-                                style={{ marginRight: "10px" }}
-                                className="mr-2"
-                              />
-                              google-play
-                            </button>
-                            <button
-                              id="Franchies_btn_mobile"
-                              type="button"
-                              className="py-3  text-white  mr-5"
-                              style={{
-                                alignItems: "center",
-                                height: "43px",
-                                background:
-                                  "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
-                                border: "none",
-                                padding: "10px 35px",
-                                fontSize: "14px",
-                                borderRadius: "25px",
-                              }}
-                            >
-                              <AiOutlineLogin
-                                style={{ marginRight: "10px" }}
-                                className="mr-2"
-                              />
-                              FRANCHISES REGISTER
-                            </button>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -118,7 +55,7 @@ const Banner = () => {
             <li>
               <img
                 id="mainImage"
-                src="https://i.ibb.co/SV5Q1Mh/Whats-App-Image-2022-12-22-at-11-59-47-AM.jpg"
+                src="https://ombannapackersmovers.com/wp-content/uploads/2022/07/sl3-1.jpg"
                 alt=""
               />
               <div className="container">
@@ -142,80 +79,6 @@ const Banner = () => {
                             <span className="bold">01 123 456 789</span>
                           </p>
                         </div>
-                        <div className="intro-layer" data-animation="fadeInUp">
-                          <div
-                            style={{ marginTop: "27px" }}
-                            className="d-flex justify-content-left mt-4 "
-                          >
-                            <button
-                              id="appleapp"
-                              type="button"
-                              className=" py-3  text-white  ms-4"
-                              style={{
-                                // display: "flex",
-                                alignItems: "center",
-                                height: "43px",
-                                background:
-                                  "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
-                                border: "none",
-                                marginRight: "20px",
-                                padding: "10px 41px",
-                                fontSize: "14px",
-                                borderRadius: "25px",
-                              }}
-                            >
-                              <BsApple
-                                style={{ marginRight: "10px" }}
-                                className="mr-2"
-                              />{" "}
-                              app store
-                            </button>
-
-                            <button
-                              id="Gplay"
-                              type="button"
-                              className="  py-3  text-white  mr-4"
-                              style={{
-                                alignItems: "center",
-
-                                height: "43px",
-                                background:
-                                  "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
-                                border: "none",
-                                padding: "10px 35px",
-                                fontSize: "14px",
-                                borderRadius: "25px",
-                              }}
-                            >
-                              <FaGooglePlay
-                                style={{ marginRight: "10px" }}
-                                className="mr-2"
-                              />
-                              google-play
-                            </button>
-                            <button
-                              id="Franchies_btn_mobile"
-                              type="button"
-                              className="py-3  text-white  mr-5"
-                              style={{
-                                alignItems: "center",
-                                height: "43px",
-                                background:
-                                  "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
-                                border: "none",
-                                padding: "10px 35px",
-                                fontSize: "14px",
-                                borderRadius: "25px",
-                              }}
-                            >
-                              <AiOutlineLogin
-                                style={{ marginRight: "10px" }}
-                                className="mr-2"
-                              />
-                              FRANCHISES REGISTER
-                            </button>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -223,10 +86,10 @@ const Banner = () => {
               </div>
             </li>
 
-            <li className="ds">
+            <li className="">
               <img
                 id="mainImage"
-                src="https://i.ibb.co/vdbkc7b/Whats-App-Image-2022-12-22-at-12-15-02-PM.jpg"
+                src="https://img.staticmb.com/mbcontent/images/uploads/2022/12/packers-and-movers-in-Patna.jpg"
                 alt=""
               />
               <div className="container">
@@ -235,94 +98,19 @@ const Banner = () => {
                     <div className="slide_description_wrapper">
                       <div className="slide_description text-left">
                         <div className="intro-layer" data-animation="fadeInUp">
-                          <h3>Find out why we're</h3>
-                          <h2>
+                          <h3 style={{ color: "#000" }}>Find out why we're</h3>
+                          <h2 style={{ color: "#000" }}>
                             <span className="highlight">#1</span> Moving
                           </h2>
                         </div>
                         <div className="intro-layer" data-animation="fadeInUp">
-                          <p className="grey">
+                          <p className="grey" style={{ color: "#000" }}>
                             <span className="bold">Trans23 Company</span> is a
                             local moving company with experts and professionals,
                             who cater to customer needs with safety, care and
                             love. Call us now:
                             <span className="bold">01 123 456 789</span>
                           </p>
-                        </div>
-                        <div className="intro-layer" data-animation="fadeInUp">
-                          <div
-                            style={{ marginTop: "27px" }}
-                            className="d-flex justify-content-left mt-4 "
-                          >
-                            <button
-                              id="appleapp"
-                              type="button"
-                              className=" py-3  text-white  ms-4"
-                              style={{
-                                // display: "flex",
-                                alignItems: "center",
-                                height: "43px",
-                                background:
-                                  "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
-                                border: "none",
-                                marginRight: "20px",
-                                padding: "10px 41px",
-                                fontSize: "14px",
-                                borderRadius: "25px",
-                              }}
-                            >
-                              <BsApple
-                                style={{ marginRight: "10px" }}
-                                className="mr-2"
-                              />{" "}
-                              app store
-                            </button>
-
-                            <button
-                              id="Gplay"
-                              type="button"
-                              className="  py-3  text-white  mr-4"
-                              style={{
-                                // display: "flex",
-                                alignItems: "center",
-
-                                height: "43px",
-                                background:
-                                  "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
-                                border: "none",
-                                padding: "10px 35px",
-                                fontSize: "14px",
-                                borderRadius: "25px",
-                              }}
-                            >
-                              <FaGooglePlay
-                                style={{ marginRight: "10px" }}
-                                className="mr-2"
-                              />
-                              google-play
-                            </button>
-                            <button
-                              id="Franchies_btn_mobile"
-                              type="button"
-                              className="py-3  text-white  mr-5"
-                              style={{
-                                alignItems: "center",
-                                height: "43px",
-                                background:
-                                  "linear-gradient(90deg, rgb(57, 120, 162), rgb(95, 203, 232))",
-                                border: "none",
-                                padding: "10px 35px",
-                                fontSize: "14px",
-                                borderRadius: "25px",
-                              }}
-                            >
-                              <AiOutlineLogin
-                                style={{ marginRight: "10px" }}
-                                className="mr-2"
-                              />
-                              FRANCHISES REGISTER
-                            </button>
-                          </div>
                         </div>
                       </div>
                       {/* <!-- eof .slide_description --> */}

@@ -12,34 +12,6 @@
   transition: transform 0.3s ease-out;
 }
 
-.Cimimage.move-up {
-  transform: translateX(10%);
-}
-
-.typewriter {
-  width: 21.5ch;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 4px solid #212121;
-  animation: cursor 1s step-start infinite, text 5s steps(18) alternate infinite;
-}
-
-@keyframes cursor {
-  0%,
-  100% {
-    border-color: #212121;
-  }
-}
-
-@keyframes text {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 13ch;
-  }
-}
-
 .p2 {
   color: red;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -55,16 +27,15 @@
   }
 }
 .cImagecontainer {
-  animation: animate 15s ease-in-out infinite;
+  animation: animate 8s ease-in;
 }
 
 @keyframes animate {
-  0%,
-  100% {
-    transform: translatex(-200px);
+  0% {
+    transform: translatex(-800px);
   }
-  50% {
-    transform: translatex(200px);
+  100% {
+    transform: translatex(0px);
   }
 }
 
@@ -74,9 +45,17 @@
   .cImagecontainer {
     animation: none;
   }
+  .typewriter {
+    width: 12ch;
+    animation: none;
+  }
 }
 @media (max-width: 560px) {
   .cImagecontainer {
+    animation: none;
+  }
+  .typewriter {
+    width: 12ch;
     animation: none;
   }
 }
@@ -84,9 +63,17 @@
   .cImagecontainer {
     animation: none;
   }
+  .typewriter {
+    width: 12ch;
+    animation: none;
+  }
 }
 @media (max-width: 520px) {
   .cImagecontainer {
+    animation: none;
+  }
+  .typewriter {
+    width: 12ch;
     animation: none;
   }
 }
@@ -95,10 +82,18 @@
   .cImagecontainer {
     animation: none;
   }
+  .typewriter {
+    width: 12ch;
+    animation: none;
+  }
 }
 
 @media (max-width: 480px) {
   .cImagecontainer {
+    animation: none;
+  }
+  .typewriter {
+    width: 12ch;
     animation: none;
   }
 }
@@ -106,9 +101,17 @@
   .cImagecontainer {
     animation: none;
   }
+  .typewriter {
+    width: 12ch;
+    animation: none;
+  }
 }
 @media (max-width: 440px) {
   .cImagecontainer {
+    animation: none;
+  }
+  .typewriter {
+    width: 12ch;
     animation: none;
   }
 }
@@ -116,9 +119,17 @@
   .cImagecontainer {
     animation: none;
   }
+  .typewriter {
+    width: 12ch;
+    animation: none;
+  }
 }
 @media (max-width: 400px) {
   .cImagecontainer {
+    animation: none;
+  }
+  .typewriter {
+    width: 12ch;
     animation: none;
   }
 }
@@ -127,15 +138,27 @@
   .cImagecontainer {
     animation: none;
   }
+  .typewriter {
+    width: 12ch;
+    animation: none;
+  }
 }
 
 @media (max-width: 360px) {
   .cImagecontainer {
     animation: none;
   }
+  .typewriter {
+    width: 12ch;
+    animation: none;
+  }
 }
 @media (max-width: 340px) {
   .cImagecontainer {
+    animation: none;
+  }
+  .typewriter {
+    width: 12ch;
     animation: none;
   }
 }

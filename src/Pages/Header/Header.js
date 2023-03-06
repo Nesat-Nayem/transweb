@@ -74,16 +74,16 @@ const Header = () => {
                 {/* <!-- main nav start --> */}
                 <nav class="mainmenu_wrapper">
                   <ul class="mainmenu nav sf-menu">
-                    <li>
+                    <li className="active">
                       {/* <a href="landing#home">Home</a> */}
-                      <NavLink smooth to="/landing#home">
+                      <NavLink smooth to="/landing#home" className="tab">
                         Home
                       </NavLink>
                     </li>
 
                     <li>
                       {/* <a href="#about">ABOUT</a> */}
-                      <NavLink smooth to="/landing#about">
+                      <NavLink smooth to="/landing#about" className="tab">
                         ABOUT
                       </NavLink>
                     </li>
@@ -91,7 +91,7 @@ const Header = () => {
 
                     <li>
                       {/* <a href="#services">SERVICES</a> */}
-                      <NavLink smooth to="/landing#services">
+                      <NavLink smooth to="/landing#services" className="tab">
                         SERVICES
                       </NavLink>
 
@@ -103,7 +103,7 @@ const Header = () => {
                     <li>
                       {/* <a href="#blog">BLOG
                         </a> */}
-                      <NavLink smooth to="/landing#blog">
+                      <NavLink smooth to="/landing#blog" className="tab">
                         BLOG
                       </NavLink>
                     </li>
@@ -112,7 +112,7 @@ const Header = () => {
                       <!-- blog --> */}
                     <li>
                       {/* <a href="#contact">CONTACT US</a> */}
-                      <NavLink smooth to="/landing#contract">
+                      <NavLink smooth to="/landing#contract" className="tab">
                         CONTACT US
                       </NavLink>
                     </li>
